@@ -1,13 +1,16 @@
 from collections import deque
 
+#Implementation of node class
 class node:
 	def __init__(self, data = None):
 		self.data = data
 		self.left = None
 		self.right = None
 
+#Queue creation
 Q = deque()
 
+#Insert data to tree function
 def insertValue(data, root):
 	newnode = node(data)
 	if Q:
@@ -25,11 +28,13 @@ def insertValue(data, root):
 	Q.append(newnode)
 	return root
 
+#Tree creation function
 def createTree(a, root):
 	for i in range(len(a)):
 		root = insertValue(a[i], root)
 	return root
 
+#Organice tree in level order
 def levelOrder(root):
 	Q = deque()
 	Q.append(root)
@@ -40,6 +45,7 @@ def levelOrder(root):
 		if temp.right != None:
 			Q.append(temp.right)
 
+#Traversals for the tree
 def preorder_traversal(tree, n):
 	if tree is None:
 		return []
@@ -78,7 +84,7 @@ def postorder_traversal(tree, n):
 
 	return results[:n]
 
-
+#Solution implementation using the functions and the class before
 a = input().split()
 b = []
 for i in a:
