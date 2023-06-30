@@ -1,4 +1,4 @@
-# islands
+# Islands
 Galapagos Islands exercise
 
 A group of botany students is interested in innovation. To achieve that, they decide to take a trip to Wolf Island (one of the Galapagos Islands that can only be visited for research purposes or professional diving, not for tourists). This trip is naturally very expensive, so they must make the most of it. They plan to investigate a new species of insect that lives in the treetops, but since the island is over 1.5 square kilometers in size, they need to maximize the sampling process. The sampling process is organized into n zones distributed across the island, where each zone has an expected quantity of insects to collect, denoted as i.
